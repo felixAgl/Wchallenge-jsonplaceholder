@@ -2,8 +2,6 @@ package com.wchallange.jsonplaceholder.dto;
 
 import lombok.Data;
 
-import java.io.Serializable;
-
 @Data
 public class UserDTO {
 
