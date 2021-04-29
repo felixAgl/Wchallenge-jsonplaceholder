@@ -2,9 +2,11 @@ package com.wchallange.jsonplaceholder.service;
 
 import com.wchallange.jsonplaceholder.dto.UserDTO;
 
+import java.util.List;
+
 public interface UserService {
 
     UserDTO consumeUser(Long id);
 
-    UserDTO[] consumeAllUser();
+    List<UserDTO> consumeAllUsers();
 }

@@ -2,9 +2,13 @@ package com.wchallange.jsonplaceholder.controller;
 
 import com.wchallange.jsonplaceholder.dto.PhotosDTO;
 import com.wchallange.jsonplaceholder.service.PhotosService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class PhotosController {
@@ -16,20 +20,18 @@ public class PhotosController {
     }
 
     @GetMapping("/photos/{id}")
-    public Object consumePhoto(@PathVariable Long id) {
+    public ResponseEntity<Object> consumePhoto(@PathVariable Long id) {
         try {
             PhotosDTO photosDTO = photosService.consumePhoto(id);
-            return photosDTO;
+            return new ResponseEntity<>(photosDTO, HttpStatus.OK);
         } catch (Exception e) {
-            return e.getMessage();
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
 
     @GetMapping("/photos")
-    public PhotosDTO[] consumeAllPhotos() {
-        return photosService.consumeAllPhotos();
-
+    public ResponseEntity<List<PhotosDTO>> consumeAllPhotos() {
+        return new ResponseEntity<>(photosService.consumeAllPhotos(), HttpStatus.OK);
     }
-
 
 }

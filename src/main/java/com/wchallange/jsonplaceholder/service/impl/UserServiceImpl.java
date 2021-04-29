@@ -6,6 +6,9 @@ import com.wchallange.jsonplaceholder.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -23,7 +26,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDTO[] consumeAllUser() {
-        return restTemplate.getForObject(USER_API, UserDTO[].class);
+    public List<UserDTO> consumeAllUsers() {
+        UserDTO[] forObject = restTemplate.getForObject(USER_API, UserDTO[].class);
+        return Arrays.asList(forObject);
     }
 }

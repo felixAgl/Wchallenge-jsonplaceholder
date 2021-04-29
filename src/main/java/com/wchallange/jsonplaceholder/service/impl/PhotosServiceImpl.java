@@ -6,6 +6,9 @@ import com.wchallange.jsonplaceholder.service.PhotosService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Service
 public class PhotosServiceImpl implements PhotosService {
 
@@ -23,7 +26,8 @@ public class PhotosServiceImpl implements PhotosService {
     }
 
     @Override
-    public PhotosDTO[] consumeAllPhotos() {
-        return restTemplate.getForObject(PHOTO_API, PhotosDTO[].class);
+    public List<PhotosDTO> consumeAllPhotos() {
+        PhotosDTO[] forObject = restTemplate.getForObject(PHOTO_API, PhotosDTO[].class);
+        return Arrays.asList(forObject);
     }
 }
