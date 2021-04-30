@@ -1,6 +1,6 @@
-package com.wchallange.jsonplaceholder.controller;
+package com.wchallange.jsonplaceholder.web.rest;
 
-import com.wchallange.jsonplaceholder.dto.UserDTO;
+import com.wchallange.jsonplaceholder.service.dto.UserDTO;
 import com.wchallange.jsonplaceholder.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
