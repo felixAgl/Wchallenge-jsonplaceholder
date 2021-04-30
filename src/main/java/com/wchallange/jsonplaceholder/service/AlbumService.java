@@ -1,6 +1,6 @@
 package com.wchallange.jsonplaceholder.service;
 
-import com.wchallange.jsonplaceholder.dto.AlbumDTO;
+import com.wchallange.jsonplaceholder.service.dto.AlbumDTO;
 
 import java.util.List;
 

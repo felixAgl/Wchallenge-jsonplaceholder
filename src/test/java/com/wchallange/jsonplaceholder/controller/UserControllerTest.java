@@ -1,6 +1,7 @@
 package com.wchallange.jsonplaceholder.controller;
 
 import com.wchallange.jsonplaceholder.service.UserService;
+import com.wchallange.jsonplaceholder.web.rest.UserController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
