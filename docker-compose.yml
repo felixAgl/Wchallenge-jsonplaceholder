@@ -1,0 +1,12 @@
+version: '2'
+services:
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    
+    environment:
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_USER=sa
+      - POSTGRES_DB=felix
+    ports:
+      - '5432:5432'
