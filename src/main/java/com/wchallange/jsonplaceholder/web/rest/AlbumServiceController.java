@@ -1,7 +1,7 @@
 package com.wchallange.jsonplaceholder.web.rest;
 
-import com.wchallange.jsonplaceholder.service.dto.AlbumDTO;
 import com.wchallange.jsonplaceholder.service.AlbumService;
+import com.wchallange.jsonplaceholder.service.dto.AlbumDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

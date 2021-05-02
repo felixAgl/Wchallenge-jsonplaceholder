@@ -9,11 +9,11 @@ import com.wchallange.jsonplaceholder.service.dto.UserDTO;
 
 public class UserMapper {
 
-    public static UserDTO toUserDto(Users user){
-      UserDTO dto = new UserDTO();
-      AddressDTO address = new AddressDTO();
-      CompanyDTO company = new CompanyDTO();
-      GeoDTO geo = new GeoDTO();
+    public static UserDTO toUserDto(Users user) {
+        UserDTO dto = new UserDTO();
+        AddressDTO address = new AddressDTO();
+        CompanyDTO company = new CompanyDTO();
+        GeoDTO geo = new GeoDTO();
         geo.setLat(user.getLat());
         geo.setLng(user.getLng());
         address.setCity(user.getCity());
@@ -32,11 +32,11 @@ public class UserMapper {
         dto.setEmail(user.getEmail());
         dto.setPhone(user.getPhone());
         dto.setWebsite(user.getWebsite());
-      return  dto;
+        return dto;
     }
 
 
-    public static Users toUserEntity(UserDTO dto){
+    public static Users toUserEntity(UserDTO dto) {
         Users user = new Users();
         user.setId(dto.getId());
         user.setName(dto.getName());
