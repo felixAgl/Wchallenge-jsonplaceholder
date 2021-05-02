@@ -5,7 +5,7 @@ import com.wchallange.jsonplaceholder.service.dto.PhotosDTO;
 
 public class PhotoMapper {
 
-    public static PhotosDTO toPhotoDto(Photos photo){
+    public static PhotosDTO toPhotoDto(Photos photo) {
         PhotosDTO dto = new PhotosDTO();
         dto.setId(photo.getId());
         dto.setThumbnailUrl(photo.getThumbnailUrl());
@@ -15,7 +15,7 @@ public class PhotoMapper {
         return dto;
     }
 
-    public static Photos toPhotosEntity(PhotosDTO dto){
+    public static Photos toPhotosEntity(PhotosDTO dto) {
         Photos photos = new Photos();
         photos.setId(dto.getId());
         photos.setTitle(dto.getTitle());

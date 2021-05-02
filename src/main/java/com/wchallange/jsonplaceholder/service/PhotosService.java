@@ -10,5 +10,5 @@ public interface PhotosService {
 
     List<PhotosDTO> consumeAllPhotos();
 
-    List<Photos> findMyPictures(Long userId);
+    List<PhotosDTO> findMyPictures(Long userId);
 }
