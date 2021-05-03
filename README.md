@@ -53,3 +53,5 @@ _docker-compose up -d_
 
 http://localhost:8080/swagger-ui.html
  to see documentation
+
+ ![image](https://user-images.githubusercontent.com/60399935/116835854-e3769200-ab89-11eb-81a3-091c676358de.png)
