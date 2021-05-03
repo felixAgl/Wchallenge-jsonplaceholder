@@ -46,3 +46,10 @@ _docker-compose up -d_
 - This is the schema in the database
 
 ![image](https://user-images.githubusercontent.com/60399935/116834305-0d788600-ab83-11eb-89a1-75325519d7fd.png)
+
+
+## If you waht see the api docs:
+- After you run app you can navigate to:
+
+http://localhost:8080/swagger-ui.html
+ to see documentation
