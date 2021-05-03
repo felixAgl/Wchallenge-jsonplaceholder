@@ -9,4 +9,6 @@ public interface CommentService {
     CommentDTO consumeComment(Long id);
 
     List<CommentDTO> consumeAllComments();
+
+    List<CommentDTO> consumeAllCommentsByUserId(Long userId);
 }

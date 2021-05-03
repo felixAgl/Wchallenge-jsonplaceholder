@@ -85,4 +85,17 @@ public class CommentServiceImpl implements CommentService {
         });
         return commentToBeReturned;
     }
+
+    @Override
+    public List<CommentDTO> consumeAllCommentsByUserId(Long userId) {
+        List<Posts> PostsFoundByUserId = postRepository.findByUserId(userId);
+        List<CommentDTO> commentToReturn = new ArrayList<>();
+        PostsFoundByUserId.forEach(post -> {
+            List<Comments> commentsToList = commentRepository.findByPost(post);
+            commentsToList.forEach(comments -> {
+                commentToReturn.add(CommentMapper.toCommentDto(comments));
+            });
+        });
+        return commentToReturn;
+    }
 }

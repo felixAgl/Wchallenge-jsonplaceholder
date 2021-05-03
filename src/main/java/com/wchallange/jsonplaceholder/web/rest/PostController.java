@@ -20,7 +20,7 @@ public class PostController {
     }
 
     @GetMapping("/posts/{id}")
-    public ResponseEntity<Object> consumeAlbum(@PathVariable Long id) {
+    public ResponseEntity<Object> consumePost(@PathVariable Long id) {
         try {
             PostDTO postDTO = postService.consumePost(id);
             return new ResponseEntity<>(postDTO, HttpStatus.OK);
@@ -30,7 +30,7 @@ public class PostController {
     }
 
     @GetMapping("/posts")
-    public ResponseEntity<List<PostDTO>> consumeAllAlbums() {
+    public ResponseEntity<List<PostDTO>> consumeAllPosts() {
         return new ResponseEntity<>(postService.consumeAllPosts(), HttpStatus.OK);
 
     }

@@ -10,9 +10,8 @@ public class CommentMapper {
         commentDTO.setId(comments.getId());
         commentDTO.setName(comments.getName());
         commentDTO.setBody(comments.getBody());
-        commentDTO.setEmail(commentDTO.getEmail());
+        commentDTO.setEmail(comments.getEmail());
         commentDTO.setPostId(comments.getPost().getId());
-
         return commentDTO;
     }
 
