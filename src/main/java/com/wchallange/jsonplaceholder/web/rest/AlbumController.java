@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class AlbumServiceController {
+public class AlbumController {
 
     private final AlbumService albumService;
 
-    public AlbumServiceController(AlbumService albumService) {
+    public AlbumController(AlbumService albumService) {
         this.albumService = albumService;
     }
 
