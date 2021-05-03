@@ -3,7 +3,7 @@ package com.wchallange.jsonplaceholder.domain.enumeration;
 
 public enum Url {
     API("https://jsonplaceholder.typicode.com"),
-    USERS("/users"), PHOTOS("/photos"), ALBUMS("/albums");
+    USERS("/users"), PHOTOS("/photos"), ALBUMS("/albums"), POSTS("/posts"), COMMENTS("/comments");
 
     private final String url;
 

@@ -1,14 +1,9 @@
 package com.wchallange.jsonplaceholder.service.mapper;
 
 import com.wchallange.jsonplaceholder.domain.Albums;
-import com.wchallange.jsonplaceholder.repository.UserRepository;
 import com.wchallange.jsonplaceholder.service.dto.AlbumDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class AlbumMapper {
-
-    @Autowired
-    private static UserRepository userRepository;
 
     public static AlbumDTO toAlbumDto(Albums album) {
         AlbumDTO dto = new AlbumDTO();
