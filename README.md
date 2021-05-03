@@ -39,4 +39,10 @@ _docker-compose up -d_
 ![image](https://user-images.githubusercontent.com/60399935/116834156-6693ea00-ab82-11eb-8154-11fdb94dd8d6.png)
 
 
-# Now you can run the aplication as a Spring application and you can Request all
+### Now you can run the aplication as a Spring application and you can Request all
+
+
+
+- This is the schema in the database
+
+![image](https://user-images.githubusercontent.com/60399935/116834305-0d788600-ab83-11eb-89a1-75325519d7fd.png)
